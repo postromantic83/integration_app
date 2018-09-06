@@ -15,21 +15,21 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan (basePackages = {"ru.gazprom_neft.gpn_at.api.service"})
 @PropertySource("classpath:web.properties")
 public class MVCConfig extends WebMvcConfigurerAdapter {
-    @Override
-    public void configureViewResolvers(ViewResolverRegistry registry) {
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setViewClass(JstlView.class);
-        viewResolver.setPrefix("/WEB-INF/");
-        viewResolver.setSuffix(".html");
-        registry.viewResolver(viewResolver);
-    }
+//    @Override
+//    public void configureViewResolvers(ViewResolverRegistry registry) {
+//        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+//        viewResolver.setViewClass(JstlView.class);
+//        viewResolver.setPrefix("/WEB-INF/");
+//        viewResolver.setSuffix(".jsp");
+//        registry.viewResolver(viewResolver);
+//    }
 
     /**
      * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
+        registry.addResourceHandler("/**").addResourceLocations("/");
     }
 
 }
