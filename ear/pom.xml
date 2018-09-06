@@ -99,7 +99,7 @@
                                 <alias>${project.artifactId}</alias>
                                 <build>
                                     <fromExt>
-                                        <name>jboss-eap71-openshift:1.1</name>
+                                        <name>jboss-eap71-openshift:1.3</name>
                                         <kind>ImageStreamTag</kind>
                                         <namespace>openshift</namespace>
                                     </fromExt>
