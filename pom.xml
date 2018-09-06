@@ -8,7 +8,6 @@
     <artifactId>integration_app</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <packaging>ear</packaging>
 
     <properties>
         <fabric8.maven.plugin.version>3.5.33.fuse-000067-redhat-1</fabric8.maven.plugin.version>
