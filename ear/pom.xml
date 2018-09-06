@@ -38,9 +38,9 @@
     </profile>
 
     <profile>
-        <id>cluster</id>
+        <id>openshift</id>
         <build>
-            <finalName>mc</finalName>
+            <finalName>integration</finalName>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
