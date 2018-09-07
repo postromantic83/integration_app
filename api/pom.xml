@@ -13,10 +13,6 @@
     <packaging>war</packaging>
     <description>Бэк-енд для сервиса тестового интеграционного приложения</description>
 
-    <build>
-
-    </build>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
