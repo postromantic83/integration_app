@@ -38,9 +38,9 @@
     </profile>
 
     <profile>
-        <id>cluster</id>
+        <id>openshift</id>
         <build>
-            <finalName>mc</finalName>
+            <finalName>integration</finalName>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -90,7 +90,7 @@
                 <plugin>
                     <groupId>io.fabric8</groupId>
                     <artifactId>fabric8-maven-plugin</artifactId>
-                    <version>${fabric8.maven.plugin.version}</version>
+                    <version>3.5.34</version>
                     <configuration>
                         <skip>false</skip>
                         <images>
