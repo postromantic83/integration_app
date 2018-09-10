@@ -27,7 +27,7 @@
                         <modules>
                             <webModule>
                                 <groupId>ru.gazprom_neft.gpn_at</groupId>
-                                <artifactId>integration_app-api</artifactId>
+                                <artifactId>integration-service</artifactId>
                                 <contextRoot>/integration</contextRoot>
                             </webModule>
                         </modules>
