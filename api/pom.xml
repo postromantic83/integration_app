@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>integration_app-api-v1</artifactId>
+    <artifactId>integration-service</artifactId>
     <packaging>war</packaging>
     <description>Бэк-енд для сервиса тестового интеграционного приложения</description>
 

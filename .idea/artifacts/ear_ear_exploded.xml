@@ -6,7 +6,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/ear/target/integration_app-ear-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="archive" name="integration_app-api-1.0-SNAPSHOT.war">
+      <element id="archive" name="integration-service-1.0-SNAPSHOT.war">
         <element id="artifact" artifact-name="integration_app-api:war exploded" />
       </element>
     </root>
