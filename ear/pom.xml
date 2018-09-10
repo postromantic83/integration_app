@@ -127,7 +127,7 @@
     <dependencies>
         <dependency>
             <groupId>ru.gazprom_neft.gpn_at</groupId>
-            <artifactId>integration_app-api</artifactId>
+            <artifactId>integration_app-api-v1</artifactId>
             <type>war</type>
             <version>1.0-SNAPSHOT</version>
         </dependency>
