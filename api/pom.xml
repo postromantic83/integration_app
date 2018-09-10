@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>integration_app-api</artifactId>
+    <artifactId>integration_app-api-v1</artifactId>
     <packaging>war</packaging>
     <description>Бэк-енд для сервиса тестового интеграционного приложения</description>
 
@@ -38,11 +38,6 @@
             <scope>provided</scope>
             <version>3.1.0.redhat-1</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>javax.servlet</groupId>-->
-            <!--<artifactId>jstl</artifactId>-->
-            <!--<version>1.2</version>-->
-        <!--</dependency>-->
 
     </dependencies>
 </project>
