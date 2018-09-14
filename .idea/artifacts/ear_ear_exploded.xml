@@ -9,6 +9,9 @@
       <element id="archive" name="integration-service-1.0-SNAPSHOT.war">
         <element id="artifact" artifact-name="integration_app-api:war exploded" />
       </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: log4j:log4j:1.2.17.redhat-3" />
+      </element>
     </root>
   </artifact>
 </component>

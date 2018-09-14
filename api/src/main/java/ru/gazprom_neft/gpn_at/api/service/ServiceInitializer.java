@@ -2,6 +2,9 @@ package ru.gazprom_neft.gpn_at.api.service;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+/**
+ * конфиг спрингового диспетчера сервлетов.
+ */
 public class ServiceInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {

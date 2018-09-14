@@ -2,6 +2,9 @@ package ru.gazprom_neft.gpn_at.api.model;
 
 import java.io.Serializable;
 
+/**
+ * Заглушка для получения тестовых данных.
+ */
 public class ResponseData implements Serializable {
     private String stringData;
     private Long longData;
