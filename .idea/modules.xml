@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/integration-service.iml" filepath="$PROJECT_DIR$/api/integration-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration_app.iml" filepath="$PROJECT_DIR$/integration_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ear/integration_app-ear.iml" filepath="$PROJECT_DIR$/ear/integration_app-ear.iml" />
     </modules>
   </component>

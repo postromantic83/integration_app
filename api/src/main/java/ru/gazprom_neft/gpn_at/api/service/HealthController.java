@@ -1,10 +1,10 @@
 package ru.gazprom_neft.gpn_at.api.service;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Пример контроллера жизнеспособности приложения.
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/monitoring")
 public class HealthController {
+    private Logger logger = LogManager.getLogger(HealthController.class);
 
     @Autowired
     ApplicationState applicationState;
@@ -28,6 +29,12 @@ public class HealthController {
             throw new Exception("Service unavailable!");
         }
         return new String("Service is working properly");
+    }
+
+    @RequestMapping(value = "/liveness", method = RequestMethod.GET)
+    @ResponseStatus (HttpStatus.OK)
+    public void liveness() {
+        logger.info("liveness requested!");
     }
 
     /**
