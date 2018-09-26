@@ -23,7 +23,7 @@ public class MainController {
     @RequestMapping (value = "/hello", method = RequestMethod.GET)
     @ResponseBody
     public String hello() {
-        return "Hello world!";
+        return "Hello world! Welcome to ESB-KSPD!";
     }
 
     /**
