@@ -77,11 +77,15 @@ public class HealthController {
         Integer availableIP = 0;
         ips = new ArrayList<InetAddress>(Arrays.asList(InetAddress.getAllByName(hostName)));
 
+        StringBuilder addresses = new StringBuilder();
         for(InetAddress inetAddress : ips){
             logger.info(hostName + " ip: " + inetAddress);
             availableIP++;
+
+            addresses.append(inetAddress);
+            addresses.append(";");
         }
-        return new String("Hello world! Host:" + hostName + " Available IPs: " + availableIP);
+        return new String("Hello world! Host:" + hostName + " IPs:" + addresses.toString());
     }
 
 
