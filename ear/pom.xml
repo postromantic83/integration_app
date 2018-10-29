@@ -40,7 +40,7 @@
     <profile>
         <id>openshift</id>
         <build>
-            <finalName>integration</finalName>
+            <finalName>intg-app</finalName>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -87,37 +87,36 @@
                         </execution>
                     </executions>
                 </plugin>
-                <!--<plugin>-->
-                    <!--<groupId>io.fabric8</groupId>-->
-                    <!--<artifactId>fabric8-maven-plugin</artifactId>-->
-                    <!--&lt;!&ndash;<version>3.5.33.fuse-000067-redhat-1</version>&ndash;&gt;-->
-                    <!--<version>3.5.41</version>-->
-                    <!--<configuration>-->
-                        <!--<skip>false</skip>-->
-                        <!--<images>-->
-                            <!--<image>-->
-                                <!--<name>${project.artifactId}</name>-->
-                                <!--<alias>${project.artifactId}</alias>-->
-                                <!--<build>-->
-                                    <!--<fromExt>-->
-                                        <!--<name>jboss-eap71-openshift:1.1</name>-->
-                                        <!--<kind>ImageStreamTag</kind>-->
-                                        <!--<namespace>openshift</namespace>-->
-                                    <!--</fromExt>-->
-                                    <!--<dockerFileDir>${project.basedir}/src/main/resources/docker</dockerFileDir>-->
-                                <!--</build>-->
-                            <!--</image>-->
-                        <!--</images>-->
-                    <!--</configuration>-->
-                    <!--<executions>-->
-                        <!--<execution>-->
-                            <!--<goals>-->
-                                <!--<goal>resource</goal>-->
-                                <!--<goal>build</goal>-->
-                            <!--</goals>-->
-                        <!--</execution>-->
-                    <!--</executions>-->
-                <!--</plugin>-->
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>fabric8-maven-plugin</artifactId>
+                    <version>${fabric8.maven.plugin.version}</version>
+                    <configuration>
+                        <skip>false</skip>
+                        <images>
+                            <image>
+                                <name>${project.artifactId}</name>
+                                <alias>${project.artifactId}</alias>
+                                <build>
+                                    <fromExt>
+                                        <name>jboss-eap71-openshift:1.1</name>
+                                        <kind>ImageStreamTag</kind>
+                                        <namespace>openshift</namespace>
+                                    </fromExt>
+                                    <dockerFileDir>${project.basedir}/src/main/resources/docker</dockerFileDir>
+                                </build>
+                            </image>
+                        </images>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>resource</goal>
+                                <goal>build</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </build>
     </profile>
